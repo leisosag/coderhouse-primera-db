@@ -1,0 +1,64 @@
+.img-thumbnail {
+	border: none;
+}
+.table-image {
+	width: 10%;
+}
+body {
+	background-color: #1d1c22;
+	color: #dbdbdb;
+}
+
+.card {
+	border: 1px solid #282b30;
+	background-color: #282b30;
+	border-radius: 16px;
+}
+
+.item {
+	background-color: #282b30;
+	padding: 10px;
+	width: 100%;
+	height: 300px;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+.item::-webkit-scrollbar {
+	width: 8px;
+}
+
+.item::-webkit-scrollbar-track {
+	background-color: #302f3d;
+}
+
+.item::-webkit-scrollbar-thumb {
+	border-radius: 4px;
+	background-color: #fff839;
+}
+
+.item-messages {
+	height: 210px;
+}
+
+.btn-warning {
+	background-color: #fff839;
+	color: #1d1c22;
+}
+.btn-warning:hover {
+	background-color: #f8f118;
+}
+
+.table th,
+.table td {
+	border-top: 1px solid #fff839;
+}
+
+.message {
+	background-color: #302f3d;
+	border-radius: 8px;
+}
+
+.text-time {
+	color: #8f8e8e;
+}

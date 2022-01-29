@@ -1,0 +1,43 @@
+extends layout
+
+block content
+  .container
+    .card.py-5.my-4
+      h2.ml-4.mb-2 Productos
+      .row.d-flex.justify-content-between
+        .col-md-6.col-xs-12.mt-3
+          .row.d-flex.justify-content-center.mx-2
+            .col-12
+              form(onsubmit='return addProduct(this)')
+                .form-group
+                  label(for='name') Nombre
+                  input#name.form-control(type='text' name='name')
+                .form-group
+                  label(for='price') Precio
+                  input#price.form-control(type='number' name='price')
+                .form-group
+                  label(for='thumbnail') Thumbnail
+                  input#thumbnail.form-control(type='text' name='thumbnail')
+                button.btn.btn-warning.btn-block.mt-3(type='submit') Agregar
+        .col-md-6.col-xs-12.mt-3
+          .row.d-flex.justify-content-center.mx-2
+            .col-12.item
+              table.table#products
+  .container
+    .card.py-5.my-4
+      h2.ml-4.mb-2 Mensajes
+      .row.d-flex.justify-content-between
+        .col-md-6.col-xs-12.mt-5
+          .row.d-flex.justify-content-center.mx-2
+            .col-12
+              form(onsubmit='return sendMessage(this)')
+                .form-group
+                  label(for='email') Email
+                  input#email.form-control(type='email' name='email')
+                .form-group
+                  label(for='message') Mensaje
+                  input#message.form-control(type='text' name='message')
+                button.btn.btn-warning.btn-block.mt-3(type='submit') Enviar
+        .col-md-6.col-xs-12.mt-5
+          .row.d-flex.justify-content-center.mx-2
+            .col-md-12.mt-3.pb-5#messages
