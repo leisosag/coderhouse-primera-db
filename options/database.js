@@ -17,5 +17,4 @@ const knexSQLite = require('knex')({
 	useNullAsDefault: true,
 });
 
-// module.exports = { knexMariaDB };
 module.exports = { knexMariaDB, knexSQLite };

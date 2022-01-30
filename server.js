@@ -68,7 +68,7 @@ io.on('connection', function (socket) {
 
 app.get('/', (req, res) => res.render('form'));
 
-const PORT = 8082;
+const PORT = 8080;
 const srv = server.listen(PORT, () => {
 	console.log(`Servidor corriendo en el puerto ${srv.address().port}`);
 	knexMariaDB.schema
