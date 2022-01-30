@@ -19,9 +19,9 @@ const renderProducts = (data) => {
 		.map((item) => {
 			return `
 			<tr>
-				<td>${item.product.name}</td>
-				<td>${item.product.price}</td>
-				<td class='table-image'><img class='img-thumbnail' src='${item.product.thumbnail}' alt='image'/></td>
+				<td>${item.name}</td>
+				<td>${item.price}</td>
+				<td class='table-image'><img class='img-thumbnail' src='${item.thumbnail}' alt='image'/></td>
 			</tr>
 		`;
 		})
@@ -35,11 +35,11 @@ const renderMessages = (data) => {
 			return `
 				<div class='message col-md-12 mt-3 p-1'>
 					<div class='row d-flex mt-2'>
-						<p class='font-weight-bold mb-0 ml-4'>${item.message.email}</p>
-						<p class='text-time mb-0 mx-2'>${item.message.time}</p>
+						<p class='font-weight-bold mb-0 ml-4'>${item.email}</p>
+						<p class='text-time mb-0 mx-2'>${item.time}</p>
 					</div>
 					<div class='row d-flex mt-2'>
-					<p class='ml-4 mb-0 pb-1'>${item.message.text}</p>
+					<p class='ml-4 mb-0 pb-1'>${item.text}</p>
 					</div>
 				</div>
 			`;
